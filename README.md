@@ -4,9 +4,9 @@ Para este trabajo realicé el diseño y desarrollo de un portfolio web en el que
 
 En primer lugar, realicé el diseño de la página en Figma, donde trabajé la distribución de los elementos, las tipografías, los colores y la organización general del contenido. También utilicé componentes para organizar y reutilizar diferentes elementos del diseño. Una vez terminado el diseño, comencé a llevarlo a código utilizando HTML y CSS. Para esto, organicé el contenido en dos archivos HTML, correspondientes a las diferentes a los frame realizados en figma, y una hoja de estilos CSS encargada de definir su apariencia general.
 
-El portfolio cuenta con distintas secciones, entre ellas la presentación inicial y el apartado de proyectos, donde se muestran tres trabajos seleccionados. Para recorrer las imágenes de cada proyecto incorporé carruseles que permiten visualizar las distintas piezas sin necesidad de abandonar la página principal que a su vez al presicionar te llevan al proyceto.
+El portfolio cuenta con distintas secciones, entre ellas la presentación inicial y el apartado de proyectos realizado en una pantalla de 1920px, donde se muestran tres trabajos seleccionados. Para recorrer las imágenes de cada proyecto incorporé carruseles que permiten visualizar las distintas piezas sin necesidad de abandonar la página principal que a su vez al presicionar te llevan al proyceto.
 
-También desarrollé una versión adaptada a dispositivos móviles, para esto, trabajé sobre la distribución y los tamaños de los elementos mediante CSS, buscando que el contenido se acomodara correctamente a diferentes dimensiones de pantalla y que la navegación siguiera siendo clara y cómoda.
+También desarrollé una versión adaptada a dispositivos móviles de 600px, para esto, trabajé sobre la distribución y los tamaños de los elementos mediante CSS, buscando que el contenido se acomodara correctamente a diferentes dimensiones de pantalla y que la navegación siguiera siendo clara y cómoda.
 
 ## Herramientas utilizadas
 - Diseño y prototipado en Figma.
