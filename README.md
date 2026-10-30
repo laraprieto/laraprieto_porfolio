@@ -1,52 +1,45 @@
-# MI PRIMER PROYECTO
-Para este trabajo realicé un Curriculum Vitae en formato web, tomando como base el diseño que había realizado previamente en Figma para poder guiarme en la construcción del mismo. La idea fue pasar ese diseño a HTML y CSS, tratando de mantener la distribución, los colores, las tipografías y la forma en la que estaba organizada la información.
+# MI PORTFOLIO
 
-Para armar la página utilicé HTML5. Fui organizando la información del CV mediante diferentes etiquetas, como header, main, section, article y footer, para separar y ordenar cada parte del contenido. De esta manera, pude distribuir la información en las diferentes secciones del proyecto (“Sobre mí”, “Formación”, “Proyectos”, “Herramientas” y  “Perfil personal”).
+Para este trabajo realicé el diseño y desarrollo de un portfolio web en el que presento una selección de algunos de mis proyectos como diseñadora en un contexto universitario. El objetivo fue crear una página que reuniera mis trabajos y permitiera recorrerlos de manera clara y ordenada, manteniendo una identidad visual propia.
 
-También utilicé diferentes tamaños de títulos, textos, imágenes, listas y enlaces según lo que necesitaba cada parte de mi página. Dentro del código agregué algunos comentarios para poder identificar y organizar mejor las diferentes partes de él.
+En primer lugar, realicé el diseño de la página en Figma, donde trabajé la distribución de los elementos, las tipografías, los colores y la organización general del contenido. También utilicé componentes para organizar y reutilizar diferentes elementos del diseño. Una vez terminado el diseño, comencé a llevarlo a código utilizando HTML y CSS. Para esto, organicé el contenido en dos archivos HTML, correspondientes a las diferentes a los frame realizados en figma, y una hoja de estilos CSS encargada de definir su apariencia general.
 
-Para darle el diseño a la página utilicé un archivo separado llamado “estilo.css”. Donde trabajé principalmente los colores, las tipografías, los tamaños de los textos, los espacios y la distribución de los diferentes elementos.
+El portfolio cuenta con distintas secciones, entre ellas la presentación inicial y el apartado de proyectos, donde se muestran tres trabajos seleccionados. Para recorrer las imágenes de cada proyecto incorporé carruseles que permiten visualizar las distintas piezas sin necesidad de abandonar la página principal que a su vez al presicionar te llevan al proyceto.
 
-También incorporé las tipografías que había elegido para el diseño y trabajé con Flexbox para poder ordenar elementos, principalmente cuando tenía que colocar una imagen junto a un texto o acomodar diferentes partes dentro de una misma sección.
+También desarrollé una versión adaptada a dispositivos móviles, para esto, trabajé sobre la distribución y los tamaños de los elementos mediante CSS, buscando que el contenido se acomodara correctamente a diferentes dimensiones de pantalla y que la navegación siguiera siendo clara y cómoda.
 
 ## Herramientas utilizadas
-* Editor de código: Visual Studio Code.
-* Navegador utilizado para probar la página: Google Chrome.
-* Lenguajes utilizados: HTML5 y CSS3.
-* Resolución de pantalla utilizada: 1920 × 1080 px.
-* Diseño previo: Figma.
+- Diseño y prototipado en Figma.
+- Editor de código, Visual Studio Code.
+- Navegador utilizado para probar la págin, Google Chrome.
+- Lenguajes utilizados, HTML5 y CSS.
+- Diseño adaptable, versión desktop y mobile.
 
 ## Diseño previo
-Antes de comenzar con el código realicé el diseño del CV en Figma. Ese diseño fue el punto de partida para después llevarlo a HTML y CSS.
+Antes de comenzar con el desarrollo, realicé el diseño completo del portfolio en Figma. Allí definí la estructura de las páginas, los componentes y la organización de los diferentes elementos, este diseño fue la base para después desarrollar la página utilizando HTML y CSS, intenado conservar en mayor medida su apariencia origianl.
 
-Enlace al diseño en Figma:
-https://www.figma.com/design/fahJqsFYQMQBXP8qLg2FpQ/Sin-t%C3%ADtulo?node-id=0-1&t=j8FWon2wldO7Md4f-1
+Enlace al diseño en Figma: https://www.figma.com/design/LDSAR2oP00EiwqAQ4dSgc0/porfolio_Lara_Prieto?node-id=0-1&t=rwcutxSXwYqVi1fC-1
 
+## Archivos del proyecto
+El proyecto está compuesto por los siguientes archivos
 
-El proyecto está compuesto por los siguientes archivos y carpetas:
+### Archivos HTML
+Son dos archivos denominados "index" y "proyecto", que contienen la estructura y el contenido de las dos páginas que conforman el portfolio. En ellos se organizan las diferentes secciones, los textos, las imágenes y los elementos de navegación.
 
-## index.html
-Es el archivo principal donde está organizada toda la información y estructura del Curriculum Vitae.
+### Archivo CSS
+Contiene los estilos utilizados para darle forma y diseño a la página. Allí trabajé los colores, las tipografías, los tamaños de los textos, los espacios y la distribución de los elementos, también incorporé los ajustes necesarios para adaptar el diseño a dispositivos móviles.
 
-## estilo.css
-Contiene los estilos utilizados para darle forma y diseño a la página, como colores, tamaños, tipografías, espacios y distribución de los elementos.
+### Carpeta img
+Contiene las imágenes utilizadas en el portfolio, tanto las correspondientes a los proyectos como los demás recursos gráficos que forman parte del diseño.
 
-## README
-Contiene la información sobre el trabajo, las herramientas utilizadas y algunos detalles técnicos del proyecto.
+### Carpeta iconos
+Contiene los iconos de Tik Tik, Instagram, Gmail, y Behance, que fueron utilizados en el footer.
 
-## link_repositorio.txt
-Contiene el enlace al repositorio de GitHub y la captura_pantalla.png, es una captura del Curriculum Vitae terminado y visualizado en el navegador.
+### Carpeta fonts
+Contiene las tipografías utilizadas en el desarrollo de la página, incorporadas para mantener la identidad visual definida previamente en Figma.
+IBMPlexSans_Condensed-Regular
+IBMPlexSans_Condensed-SemiBold
+MajorMonoDisplay-Regular
 
-## Carpeta img
-Donde se encuentran las imágenes utilizadas en el proyecto, como, lara.jpeg, tipografia2.jpeg, tipografia3.jpeg, medios3.jpeg, y favicon.gif.
-
-## Carpeta fonts
-Dentro de ella se encuentran las tipografías utilizadas a lo largo del proyecto.
-
-* Coda ExtraBold: utilizada principalmente para los títulos.
-* EB Garamond Regular: utilizada para los textos generales.
-* EB Garamond Bold: utilizada para destacar algunos textos.
-* EB Garamond Italic: utilizada en textos que necesitaban una diferenciación dentro del diseño.
-
-Las tipografías se incorporaron al proyecto para poder mantener el mismo estilo del diseño realizado previamente en Figma.
-
+### README
+Contiene la descripción del proyecto, las herramientas utilizadas y la información general sobre su desarrollo.
