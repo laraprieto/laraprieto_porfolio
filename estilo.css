@@ -1,0 +1,632 @@
+/* Proyecto Porfolio - COMPUTACIÓN III
+   Porfolio en HTML5 y CSS3
+   Alumna: Lara Prieto  */
+
+@font-face {
+    font-family: "IBM Plex Sans Condensed";
+    src: url("font/IBMPlexSans_Condensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Sans Condensed";
+    src: url("font/IBMPlexSans_Condensed-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Major Mono Display";
+    src: url("font/MajorMonoDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Configuración general */
+
+html {
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: #f7f4f1;
+    color: #020101;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: #8f4159;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    
+    list-style: none;
+}
+
+
+
+/* Encabezado y navegación */
+
+.encabezado {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #f7f4f1;
+    box-shadow: 0 14px 20px rgba(0, 0, 0, 0.13);
+}
+
+.nav {
+    position: sticky;
+    height: 56px;
+    padding: 0 3.5%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.nav-links a {
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #020101;
+}
+
+.nav-actual,
+.menu-check,
+.menu-boton {
+    display: none;
+}
+
+
+/* Presentación del index */
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 2% 60px;
+}
+
+.texto-presentacion {
+    max-width: 640px;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 0 0 25px;
+    color: #8f4159;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* Información personal del index */
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 3.5%;
+    color: #8f4159;
+}
+
+.informacion article {
+    flex: 1;
+}
+
+.informacion article:last-child {
+    flex: 0.5;
+}
+
+.bloque {
+    margin-bottom: 40px;
+}
+
+.informacion h2 {
+    margin: 0 0 15px;
+    color: #020101;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.texto-bloque {
+    max-width: 420px;
+}
+
+
+/* Carrusel del index */
+
+.muestra-proyectos {
+    padding: 60px 0 80px;
+}
+
+.muestra-proyectos h2 {
+    margin: 30px;
+    color: #020101;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.muestra-proyectos > a:hover h2 {
+    color: #8f4159;
+}
+
+.galeria {
+    overflow: hidden;
+    box-shadow: 0 0 40px #00000020;
+}
+
+.galeria-pista {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: carrusel 35s linear infinite;
+}
+
+/* Al pasar el mouse el carrusel se detiene */
+.galeria:hover .galeria-pista {
+    animation-play-state: paused;
+}
+
+.galeria-pista img {
+    max-width: none;
+    transition: opacity 0.3s;
+}
+
+.galeria-pista a:hover img {
+    opacity: 0.8;
+}
+
+@keyframes carrusel {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Página de proyectos */
+
+.proyecto {
+    max-width: 1200px;
+    padding: 70px 3.5% 90px;
+}
+
+
+.titulo-proyecto {
+    width: fit-content;
+    margin: 0 0 70px auto;
+    color: #8f4159;
+    font-family: "Major Mono Display", monospace;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.titulo-proyecto span {
+    display: block;
+}
+
+.info-proyecto {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+}
+
+.datos-proyecto {
+    width: 300px;
+    font-size: 14px;
+}
+
+.datos-proyecto h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.descripcion-proyecto {
+    max-width: 860px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+     margin-top: 25px;
+    
+}
+
+
+/* Imágenes de cada */
+.imagenes-proyecto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.imagenes-proyecto img,
+.imagenes-proyecto video {
+    width: 100%;
+    height: auto;
+}
+
+
+.imagenes-proyecto .completa {
+    grid-column: 1 / 3;
+    
+}
+
+
+.imagenes-proyecto .alta {
+    grid-row: span 2;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes-proyecto .apaisada {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
+
+.imagenes-proyecto video {
+    pointer-events: none;
+}
+
+
+/* Formulario de contacto */
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 60px 3.5% 80px;
+    box-shadow: 0 14px 50px rgba(0, 0, 0, 0.13);
+}
+
+.contacto-texto {
+    max-width: 420px;
+}
+
+.contacto-texto h2 {
+    margin: 40px;
+    margin-left: 0;
+    color: #8f4159;
+    font-family: "Major Mono Display", monospace;
+    font-size: 24px;
+    font-weight: 420;
+    letter-spacing: 4px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 830px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 8px 10px;
+    border: 1.5px solid #8f4159;
+    background-color: #f7f4f1;
+    color: #020101;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.campo input {
+    border-width: 0 0 1.5px;
+}
+
+.campo select {
+    color: #8f4159;
+    font-weight: 600;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    background-color: #efe7e9;
+}
+
+.campo input:invalid:not(:placeholder-shown):not(:focus) {
+    border-color: #8f4159;
+}
+
+.boton-enviar {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    background-color: #8f4159;
+    color: #f7f4f1;
+    font-family: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-enviar:hover {
+    background-color: #6e2f43;
+}
+
+.boton-enviar span {
+    transition: transform 0.3s;
+}
+
+.boton-enviar:hover span {
+    transform: translateX(6px);
+}
+
+
+/* footer */
+
+.footer {
+    padding: 30px 3.5% 40px;
+    background-color: #8f4159;
+    color: #f7f4f1;
+}
+
+.footer h2 {
+    margin: 24px;
+    margin-left: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #f7f4f1;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+.redes a:hover {
+    opacity: 0.7;
+}
+
+.redes img {
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.redes .mail {
+    text-decoration: underline;
+    overflow-wrap: anywhere;
+}
+
+
+
+
+/* Adaptación de pantalla para el mobile  */
+
+@media (max-width: 600px) {
+
+    /* Menú hamburguesa */
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .nav-actual {
+        display: block;
+        font-family: monospace;
+        font-size: 24px;
+    }
+
+    .menu-boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .menu-boton span {
+        height: 6px;
+        background-color: #8f4159;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        height: auto;
+        padding: 15px 20px;
+        background-color: #8f4159;
+        box-shadow: 0 4px 20px #00000030;
+    }
+
+    .nav-links a {
+        color: #f7f4f1;
+        font-size: 18px;
+    }
+
+    .nav-links a::after {
+        content: " /";
+    }
+
+    .nav-links a:hover {
+        color: #e8dce0;
+    }
+
+    /* Al tocar el botón se despliega el menú */
+    .menu-check:checked ~ .nav-links {
+        display: flex;
+    }
+
+
+    .principal-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .principal-inicio .muestra-proyectos {
+        order: 1;
+    }
+
+    .principal-inicio .informacion {
+        order: 2;
+    }
+
+    
+    .presentacion {
+        flex-direction: column;
+        gap: 0;
+        padding: 40px 5%;
+    }
+
+    .texto-presentacion {
+        display: contents;
+    }
+
+
+    .texto-presentacion p {
+        order: 2;
+        font-size: 18px;
+    }
+
+    .texto-presentacion p + p {
+        margin-top: 15px;
+    }
+
+    .foto-presentacion {
+        order: 1;
+        margin: 0;
+    }
+
+    .foto-presentacion img {
+        width: 380px;
+    }
+
+    .muestra-proyectos {
+        padding: 30px 0 50px;
+    }
+
+    .muestra-proyectos h2 {
+        margin-left: 5%;
+        color: #8f4159;
+        font-size: 28px;
+        text-transform: none;
+    }
+
+    .galeria-pista img {
+        width: auto;
+        height: 300px;
+    }
+
+    .informacion {
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 5%;
+    }
+
+    .bloque {
+        margin-bottom: 25px;
+    }
+
+    .proyecto {
+        padding: 40px 5%;
+    }
+
+    .titulo-proyecto {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .datos-proyecto h3 {
+        font-size: 22px;
+    }
+
+
+    .imagenes-proyecto {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .imagenes-proyecto .alta {
+        grid-row: auto;
+    }
+
+    .imagenes-proyecto .apaisada {
+        aspect-ratio: auto;
+    }
+
+    .contacto {
+        padding: 40px 5% 60px;
+    }
+
+    .contacto-texto h2 {
+        font-size: 36px;
+    }
+
+    .pie {
+        padding: 30px 5% 40px;
+    }
+
+    .redes {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
